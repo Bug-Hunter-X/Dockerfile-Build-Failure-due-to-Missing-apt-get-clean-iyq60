@@ -1,0 +1,1 @@
+This repository demonstrates a common error in Dockerfiles: forgetting to run `apt-get clean` after installing packages.  This seemingly small oversight can significantly increase build times and even lead to build failures due to cached packages consuming excessive disk space in the image. The `Dockerfile_fixed` demonstrates the correct usage of `apt-get clean`.
